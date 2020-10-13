@@ -25,4 +25,9 @@ export const FormBookAppointment = styled.form`
 
 export const ContactFormCard = styled.div`
     border: 3px solid black;
+    img{
+        width: 150px;
+        border-radius: 300px;
+        border: 5px solid blue;
+    }
 `
