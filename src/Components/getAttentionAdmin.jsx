@@ -36,7 +36,7 @@ import { ContactFormCard, BorderAttention } from "../style/style";
                         <p>{attention.idAttention}</p>
                         <h3>{attention.nameAttention}</h3>
                         <img src={attention.imageLinkAttention} alt=""/>
-                                 
+                        <Dropzone idAttention={attention.idAttention}/>         
                     </ContactFormCard>
                 )
             }

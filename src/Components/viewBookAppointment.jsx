@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-import { ContactFormCard } from "../style/style";
+import { ContactClientCard, ContactFormCard } from "../style/style";
 
 
  export default class AdminDashboard extends React.Component{
@@ -21,7 +21,7 @@ import { ContactFormCard } from "../style/style";
 
      render(){
          return (
-            <div>
+            <ContactClientCard>
             {
                 this.state.bookAppointment.map(bookAppointment =>
                     //the condition will here to show only the enable works 
@@ -36,7 +36,7 @@ import { ContactFormCard } from "../style/style";
                     </ContactFormCard>
                 )
             }
-        </div>
+        </ContactClientCard>
          )
      }
 

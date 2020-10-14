@@ -4,12 +4,12 @@ export default class Dateee extends React.Component{
     
 
     state = {
-        datee: []
+        date: []
     }
 
-    onChangeDatee = (e) => {
+    onChangeDate = (e) => {
         this.setState({
-            datee: e.target.value
+            date: e.target.value
         });
     };
 
@@ -23,8 +23,9 @@ export default class Dateee extends React.Component{
             <div>
                 <form onSubmit={this.onSubmit}>
 
-                <input  
-                onChange={this.onChangeDatee}
+                <input
+                name="bookAppointmentClient"  
+                onChange={this.onChangeDate}
                 type="date"/>
                 <button type="submit">enviarrr</button>
 

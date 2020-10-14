@@ -3,6 +3,8 @@ import React, {useCallback} from 'react'
 import {useDropzone} from 'react-dropzone'
 import axios from "axios";
 
+import { PreDropZone, PostDropZone } from "../style/style";
+
 
 function Dropzone({idAttention}) {
   const onDrop = useCallback(acceptedFiles => {
@@ -34,8 +36,8 @@ function Dropzone({idAttention}) {
       <input {...getInputProps()} />
       {
         isDragActive ?
-          <p>Drop the attention image here ...</p> :
-          <p>Drag 'n' drop some attention image, or click to select the attention image</p>
+          <PostDropZone>Drop the attention image here ...</PostDropZone> :
+          <PreDropZone>Drag 'n' drop some attention image, or click to select the attention image</PreDropZone>
       }
     </div>
   )
